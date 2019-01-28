@@ -1,1 +1,1 @@
-worker: node spambot.js
+worker: node watbot.js
