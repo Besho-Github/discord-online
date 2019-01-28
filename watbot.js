@@ -6,6 +6,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+client.login(process.env.BOT_TOKEN);
 const developers = id
 const adminprefix = initcmd;
 client.on('message', message => {
@@ -41,5 +42,3 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 }); 
- 
-client.login(process.env.BOT_TOKEN);
